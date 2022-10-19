@@ -1,0 +1,24 @@
+
+.gallery{ 
+
+    width: 200px;
+    
+}
+
+.clickOver{
+    background: red;
+}
+
+.clickDown{
+    background: rgb(125, 156, 0);
+}
+
+
+.gallery__item{  /*hijos*/
+	width: 60px;
+    height: 50px;
+    border: solid 1px;
+    float: left;
+    margin-left: 3px;
+    margin-top: 15px;
+}

@@ -1,0 +1,71 @@
+{
+  "posts": [
+    {
+      "title": "123",
+      "content": "Pues nos e que poner tio, esto me supera demasiado :c",
+      "author": "el 2",
+      "id": 1
+    },
+    {
+      "title": "Otro mas",
+      "content": "Po vamos a vernos a las cinco",
+      "author": "Joseba",
+      "id": 2
+    },
+    {
+      "title": "Quillo que esto medio va",
+      "content": "Si esto realmente funcionar no habría ningun problema pero me empieza a doler la cabeza",
+      "author": "Salchichonio",
+      "id": 3
+    },
+    {
+      "title": "Ni idea bro, me perdí",
+      "content": "Estamos mu bien dormiditos en casa",
+      "author": "ErLuke",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "name": "Blake",
+      "nick": "joseju",
+      "tel": "19",
+      "edad": "19",
+      "correo": "capibara@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Blake",
+      "nick": "3sdsd",
+      "tel": "3",
+      "edad": "3",
+      "correo": "niputaideadeestobroxD@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Cristo",
+      "nick": "MiChanclaOndeTa?",
+      "tel": "33",
+      "edad": "33",
+      "correo": "esonoexistejajaxd@divino.com",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "contenido": "Yo pensaba que no iba directamente",
+      "idAuthor": "1",
+      "idPost": "3"
+    },
+    {
+      "contenido": "No quiero seguir contigo sr negativo",
+      "idAuthor": "3",
+      "idPost": "3"
+    },
+    {
+      "contenido": "Su prima que dificil",
+      "idAuthor": "2",
+      "idPost": "1"
+    }
+  ]
+}

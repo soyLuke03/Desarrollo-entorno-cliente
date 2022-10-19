@@ -1,0 +1,35 @@
+Usando la etiqueta normal <LaQueSea> se seleccionan todas las del mismo tipo.
+
+Usando la etiqueta seguido de # + la ID de la etiqueta se seleccionan las del mismo topo e ID.
+
+Usando <etiqueta> <etiqueta2> se seleccionan las que sean del mismo tipo dentro de la primera etiqueta.
+
+Usando .Clase se seleccionan las etiquetas con la clase en común.
+
+Usando Nombre.Clase se seleccionan las etiquetas con la misma clase de las etiquetas señaladas.
+
+Usando * se seleccionan todos los objetos y si lo combinamos con un nombre se seleccionan todos los nombres.
+
+Usando nombre + nombre se seleccionan todos los elementos directamente en el mismo nivel.
+
+Usando ~ se selecciona cada nombre seguido del otro nombre p ~ a (Cada a si va detrás de un p).
+
+Usando > se selecciona al hijo directo.
+
+Usando Last/First-Child cogemos el último/primer hijo de la etiqueta.
+
+Usando nth-child(nº) Se coge al nº hijo de la etiqueta.
+
+Usando nth-last-child(nº) es igual pero a la inversa.
+
+Usando :first-of-type cogemos el primer objeto con la ocurrencia.
+
+Usando :nth-of-type(odd) cogemos solo los impares del mismo tipo
+
+Usando :only-of-type cogemos solo el tipo elegido de la etiqueta elegida.
+
+Usando *[for] Cogemos las etiquetas que usen el atributo FOR.
+
+Usando [nombre$="algo"] cogerá todo lo que tenga un atributo que acabe an "algo".
+ 
+Usando [nombre*="algo"] cogerá todo lo que tenga un atributo que contenga "algo".  
