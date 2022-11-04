@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css">
     </head>
     <body>
         <h1>LISTA DE POSTS</h1>
@@ -15,15 +15,17 @@
         <form id="formulario">
             <input type="text" name="title" id="title" placeholder="Titulo">
             <br>
-            <input type="text" name="content" id="content" placeholder="Contenido">
+            <input type="text" name="content" id="content" placeholder="Descripción">
             <br>
-            <input type="text" name="author" id="author" placeholder="Autor">
+            <select id="autores">
+
+            </select>
             <br>
             <p id="msg"></p>
             <input type="submit">
+            <a href="index.html">Ir a creador de user</a>
         </form>
 
-        <a href="index.html">Ir a creador de user</a>
     </body>
-    <script src="script2.js"></script>
+    <script src="fetchSc2.js"></script>
 </html>

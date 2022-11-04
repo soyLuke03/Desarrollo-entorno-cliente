@@ -1,42 +1,45 @@
-const peticion = new XMLHttpRequest();
+fetch('http://localhost:3000/posts')
+    .then(response => response.json())   
+    .then(misDatos => {
 
-peticion.open("GET","http://localhost:3000/posts");
-peticion.send();
+        for(let i = 0;i<misDatos.length;i++){
 
-
-peticion.addEventListener("load", function() {
-    if(peticion.status===200){
-        let posts = JSON.parse(peticion.responseText);
-
-
-        for(let i = 0;i<posts.length;i++){
-            // +  + ". " + " Autor: " + posts[i].author
-
-            let contenido = document.createTextNode("Titulo: ");
+            let contenido = document.createTextNode("TITULO: ");
             let pPost = document.createElement("p");
             pPost.append(contenido);
             document.getElementById("cuerpo").append(pPost);
 
-            let aTitulo = document.createTextNode(posts[i].title)
+            let aTitulo = document.createTextNode(misDatos[i].title)
             let a = document.createElement("a");
             a.append(aTitulo);
-            a.setAttribute("href",`Comments.html?id=${posts[i].id}`)
+            a.setAttribute("href",`Comments.html?id=${misDatos[i].id}`)
             document.getElementById("cuerpo").append(a);
 
-            contenido = document.createTextNode("Contenido: ");
+            contenido = document.createTextNode("CONTENIDO: ");
             pPost = document.createElement("p");
             pPost.append(contenido);
             document.getElementById("cuerpo").append(pPost);
 
-            contenido = document.createTextNode(posts[i].content);
+            contenido = document.createTextNode(misDatos[i].content);
+            pPost = document.createElement("p");
+            pPost.append(contenido);
+            document.getElementById("cuerpo").append(pPost);
+
+            contenido = document.createTextNode("AUTOR: ");
+            pPost = document.createElement("p");
+            pPost.append(contenido);
+            document.getElementById("cuerpo").append(pPost);
+
+            contenido = document.createTextNode(misDatos[i].author);
             pPost = document.createElement("p");
             pPost.append(contenido);
             document.getElementById("cuerpo").append(pPost);
 
             //Creamos un <BR>
             let br = document.createElement("br");
+            let hr = document.createElement("hr");
             document.getElementById("cuerpo").append(br);
-            document.getElementById("cuerpo").append(br);
+            document.getElementById("cuerpo").append(hr);
            
 
                    
@@ -44,7 +47,9 @@ peticion.addEventListener("load", function() {
             //---------------
             document.getElementById("cuerpo").append(br);
         }
-    }
+})
+.catch(err => {
+    console.log('Error en la petición HTTP: '+err.message);
 })
 
 const petAutor = new XMLHttpRequest();
@@ -66,29 +71,32 @@ petAutor.addEventListener('load', (e) => {
 })
 
 
+
 document.getElementById('formulario').addEventListener('submit', (event) => {
     event.preventDefault();
     const newUser={
         title: document.getElementById("title").value,
         content: document.getElementById("content").value,
-        content: document.getElementById("autores").value
+        author: document.getElementById("autores").value
     }    
-
-
-    const peticion=new XMLHttpRequest();
-    peticion.open('POST', 'http://localhost:3000/posts');
-    peticion.setRequestHeader('Content-type', 'application/json');  
-    // Siempre tiene que estar esta línea si se envían datos
-    peticion.send(JSON.stringify(newUser));              
+    fetch('http://localhost:3000/posts', {
+        method: 'POST', 
+        body: JSON.stringify(newUser), // los datos que enviamos al servidor en el 'send'
+        headers:{
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => {
+          if(response.ok) {
+              return response.json();
+          }
+          return Promise.reject(response)
+      })
+      .then(datos => datosServidor=datos)
+      .catch(err => {
+        console.log('Error en la petición HTTP: '+err.message);
+      }) 
+              
     // Hay que convertir el objeto a una cadena de texto JSON para enviarlo
     document.getElementById("msg").textContent = "Enviado con exito"
 })
-
-
-
-
-
-
-
-
-

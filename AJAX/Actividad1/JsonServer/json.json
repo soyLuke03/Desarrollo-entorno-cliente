@@ -1,28 +1,22 @@
 {
   "posts": [
     {
-      "title": "123",
-      "content": "Pues nos e que poner tio, esto me supera demasiado :c",
-      "author": "el 2",
+      "title": "Primer Post",
+      "content": "Illo juan, que no sale",
+      "author": "YoNoHabloMuyBien",
       "id": 1
     },
     {
-      "title": "Otro mas",
-      "content": "Po vamos a vernos a las cinco",
-      "author": "Joseba",
+      "title": "Segundo posti",
+      "content": "Obrigado a deu",
+      "author": "3sdsd",
       "id": 2
     },
     {
-      "title": "Quillo que esto medio va",
-      "content": "Si esto realmente funcionar no habría ningun problema pero me empieza a doler la cabeza",
-      "author": "Salchichonio",
-      "id": 3
-    },
-    {
-      "title": "Ni idea bro, me perdí",
+      "title": "Tercer Post",
       "content": "Estamos mu bien dormiditos en casa",
-      "author": "ErLuke",
-      "id": 4
+      "author": "SoyUnNuevoAutor",
+      "id": 3
     }
   ],
   "users": [
@@ -35,37 +29,64 @@
       "id": 1
     },
     {
-      "name": "Blake",
+      "name": "Eseba",
       "nick": "3sdsd",
       "tel": "3",
       "edad": "3",
-      "correo": "niputaideadeestobroxD@gmail.com",
+      "correo": "niideadeestobroxD@gmail.com",
       "id": 2
     },
     {
-      "name": "Cristo",
-      "nick": "MiChanclaOndeTa?",
-      "tel": "33",
-      "edad": "33",
+      "name": "Josemari",
+      "nick": "erpepe",
+      "tel": "12",
+      "edad": "12",
       "correo": "esonoexistejajaxd@divino.com",
-      "id": 3
+      "id": 10
+    },
+    {
+      "name": "asdasd",
+      "nick": "otroasd",
+      "tel": "15",
+      "edad": "15",
+      "correo": "brolixD@gmail.com",
+      "id": 11
+    },
+    {
+      "name": "soyAñañín",
+      "nick": "YoNoHabloMuyBien",
+      "tel": "420",
+      "edad": "420",
+      "correo": "algunajajasalu2@gmail.com",
+      "id": 12
+    },
+    {
+      "name": "josemanu",
+      "nick": "SoyUnNuevoAutor",
+      "tel": "19",
+      "edad": "19",
+      "correo": "capibara@gmail.com",
+      "id": 13
     }
   ],
   "comments": [
     {
-      "contenido": "Yo pensaba que no iba directamente",
-      "idAuthor": "1",
-      "idPost": "3"
+      "contenido": "Este es un nuevo comentario que funciona correctamente",
+      "idAuthor": "erpepe",
+      "idPost": "1",
+      "id": 1
     },
     {
-      "contenido": "No quiero seguir contigo sr negativo",
-      "idAuthor": "3",
-      "idPost": "3"
+      "contenido": "Este comentario solo está disponible en el segundo post",
+      "idAuthor": "SoyUnNuevoAutor",
+      "idPost": "2",
+      "id": 2
     },
     {
-      "contenido": "Su prima que dificil",
-      "idAuthor": "2",
-      "idPost": "1"
+      "contenido": "Se anidan bien los comentarios, no hay problem",
+      "idAuthor": "joseju",
+      "idPost": "1",
+      "id": 3
     }
   ]
 }
