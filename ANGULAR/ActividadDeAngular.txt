@@ -1,0 +1,7 @@
+Objetivo 1: Iniciarse en angular, conseguido
+- He conseguido, por medio de un proyecto en StackBlitz, usar varias funciones de angular para la creacion de una pequeña web.
+- He usado comandos específicos como ngFor y ngIf para poner lógica a la plantilla de Html.
+- He usado "[]" para asignar una variable
+- He usado "{{ }}" para usar una variable designada.
+
+También he creado un aplicación que interactua con el usuario y los elementos interactúan entre ellos, todo mediante un ejercicio guiado por la página oficial de angular
